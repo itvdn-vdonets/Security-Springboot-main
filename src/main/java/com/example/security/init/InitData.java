@@ -15,7 +15,6 @@ public class InitData implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-
         Role role1=new Role();
         role1.setAuthority("USER");
         repo.save(role1);
@@ -27,6 +26,5 @@ public class InitData implements CommandLineRunner {
         Role role3=new Role();
         role3.setAuthority("ADMIN");
         repo.save(role3);
-
     }
 }
